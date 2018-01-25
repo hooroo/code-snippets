@@ -1,11 +1,9 @@
 FactoryBot.define do
-  factory :user do
-    username "MyString"
-    email "MyString"
+  sequence :user do |n|
+    username "codemonkey0#{n}"
+    email "user#{n}@gmail.com"
     password "MyString"
-    first_name "MyString"
-    last_name "MyString"
-    created_at "2018-01-12 14:40:14"
-    updated_at "2018-01-12 14:40:14"
+    first_name "John"
+    last_name "Doe"
   end
 end

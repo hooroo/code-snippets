@@ -1,4 +1,9 @@
 FactoryBot.define do
+  factory :comment do
+    body "comment"
+    association :commentable, factory: :snippet
+  end
+
   factory :user do
     sequence(:username) { |n| "codemonkey#{n}" }
     sequence(:email) { |n| "user#{n}@example.com" }

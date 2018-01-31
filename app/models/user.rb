@@ -2,6 +2,7 @@ class User < ApplicationRecord
   has_secure_password
 
   has_many :snippets
+  has_many :comments, as: :commentable
 
   validates :username, presence: true, uniqueness: true, length: { minimum: 4 }
   validates :email, presence: true, uniqueness: true

@@ -6,5 +6,4 @@ class User < ApplicationRecord
   validates :password, presence: true, length: { minimum: 8 }
   validates :first_name, presence: true
   validates :last_name, presence: true
-
 end

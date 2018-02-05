@@ -1,5 +1,7 @@
 class Snippet < ApplicationRecord
   belongs_to :user
 
-  validates :title, :body, presence: true
+  has_many :comments, as: :commentable
+
+  validates :title, :body, :user_id, presence: true
 end

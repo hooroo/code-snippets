@@ -8,7 +8,7 @@ FactoryBot.define do
   end
 
   factory :snippet do
-    user nil
+    user
     title "title"
     body "content"
   end

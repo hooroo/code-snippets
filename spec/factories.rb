@@ -6,4 +6,10 @@ FactoryBot.define do
     first_name "Foo"
     last_name "Bar"
   end
+
+  factory :snippet do
+    user
+    title "title"
+    body "content"
+  end
 end

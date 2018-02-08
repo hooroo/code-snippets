@@ -17,4 +17,8 @@ FactoryBot.define do
     title "title"
     body "content"
   end
+
+  factory :tag do
+    name "backend"
+  end
 end

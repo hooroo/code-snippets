@@ -10,6 +10,7 @@ FactoryBot.define do
 
   factory :snippet do
     user
+    language
     title "title"
     body "content"
   end

@@ -9,8 +9,8 @@ feature "user creates an account" do
     fill_in("user_password", with: "password")
     fill_in("user_first_name", with: "Foo")
     fill_in("user_last_name", with: "Bar")
-    click_on("Create User")
+    click_on(I18n.t("users.new.submit"))
 
-    expect(page).to have_text("Welcome, Foo")
+    expect(page).to have_text("#{I18n.t("users.show.welcome")}, Foo")
   end
 end

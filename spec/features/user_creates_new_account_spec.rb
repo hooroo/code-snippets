@@ -1,6 +1,6 @@
 require "rails_helper"
 
-feature "user creates an account" do
+feature "user creates new account" do
   scenario "successfully" do
     visit(new_user_path)
 
@@ -12,5 +12,19 @@ feature "user creates an account" do
     click_on(I18n.t("users.new.submit"))
 
     expect(page).to have_text("#{I18n.t("users.show.welcome")}, Foo")
+  end
+
+  scenario "unsuccessfully" do
+    visit(new_user_path)
+
+    fill_in("user_username", with: "user")
+    fill_in("user_email", with: "user@example.com")
+    fill_in("user_password", with: "bad")
+    fill_in("user_first_name", with: "Foo")
+    fill_in("user_last_name", with: "Bar")
+    click_on(I18n.t("users.new.submit"))
+
+    expect(page).to have_text("#{I18n.t("flash.users.create.alert")}")
+    # expect(page).to have_current_path(new_user_path)
   end
 end

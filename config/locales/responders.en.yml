@@ -10,3 +10,8 @@ en:
       destroy:
         notice: "%{resource_name} was successfully destroyed."
         alert: "%{resource_name} could not be destroyed."
+        
+    users:
+      create:
+        notice: "Your account has been created successfully."
+        alert: "Your account could not be created."

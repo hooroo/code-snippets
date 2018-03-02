@@ -1,11 +1,4 @@
 en:
-  users:
-    new:
-      title: "Enter Your Details"
-      submit: "Sign Up"
-    show:
-      welcome: "Welcome"
-
   activerecord:
     errors:
       messages:
@@ -15,3 +8,22 @@ en:
       models:
         user:
           too_short: "%{attribute} is too short (minimum is %{count} characters)"
+
+  sessions:
+    create:
+      flash:
+        alert: "Invalid email/password combination"
+        notice: "Log in successful"
+
+    new:
+      flash:
+        alert: "Already logged in"
+      submit: "Log In"
+      title: "Log in with your details"
+
+  users:
+    new:
+      submit: "Sign Up"
+      title: "Enter Your Details"
+    show:
+      welcome: "Welcome"

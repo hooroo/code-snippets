@@ -20,6 +20,9 @@ Layout/IndentationConsistency:
 Layout/MultilineBlockLayout:
   Exclude:
     - "spec/**/*"
+Metrics/AbcSize:
+  Exclude:
+    - "app/controllers/sessions_controller.rb"
 Metrics/BlockLength:
   Exclude:
     - "spec/**/*"

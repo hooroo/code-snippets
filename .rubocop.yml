@@ -1,0 +1,81 @@
+AllCops:
+  Exclude:
+    - "bin/setup"
+    - "Gemfile.lock"
+    - "spec/spec_helper.rb"
+EndOfLine:
+  Enabled: false
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+Layout/DotPosition:
+  Enabled: false
+Layout/EmptyLinesAroundClassBody:
+  Enabled: false
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+Layout/FirstParameterIndentation:
+  Enabled: false
+Layout/IndentationConsistency:
+  Enabled: true
+Layout/MultilineBlockLayout:
+  Exclude:
+    - "spec/**/*"
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "config/**/*"
+    - "bin/*"
+    - "db/*"
+Metrics/LineLength:
+  Max: 80
+  Exclude:
+    - "config/**/*"
+    - "db/schema.rb"
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+Naming/ConstantName:
+  Enabled: true
+Style/DefWithParentheses:
+  Enabled: true
+Style/Documentation:
+  Enabled: false
+Style/EmptyMethod:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IdenticalConditionalBranches:
+  Enabled: true
+Style/IfInsideElse:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/MixinUsage:
+  Exclude:
+    - "bin/update"
+Style/MutableConstant:
+  Exclude:
+    - "config/**/*"
+Style/NegatedIf:
+  Enabled: true
+Style/NumericLiterals:
+  Exclude:
+    - "db/**/*"
+Style/OneLineConditional:
+  Enabled: false
+Style/StderrPuts:
+  Exclude:
+    - "bin/*"
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/SymbolArray:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+Style/UnneededInterpolation:
+  Enabled: false
+Style/WordArray:
+  EnforcedStyle: brackets

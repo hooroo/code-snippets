@@ -28,8 +28,6 @@ describe SessionsController do
       end
     end
   end
-<<<<<<< HEAD:spec/controllers/sessions_controller.rb
-=======
 
   context "GET #new" do
     context "when a user is already logged in" do
@@ -52,5 +50,4 @@ describe SessionsController do
       end
     end
   end
->>>>>>> 2c70638... fixup! Adds sign in with invalid credentials controller spec:spec/controllers/sessions_controller_spec.rb
 end

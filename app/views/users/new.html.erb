@@ -7,3 +7,6 @@
   <%= f.input :password %>
   <%= f.button :submit, t(".submit") %>
 <% end %>
+<p>
+  <%= t(".sign_in_message_html", href: link_to("here", login_path)) %>
+</p>

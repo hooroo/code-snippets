@@ -18,12 +18,13 @@ en:
     new:
       flash:
         alert: "Already logged in"
-      submit: "Log In"
       sign_up_message_html: "Haven't got an account? Click %{href} to sign up."
+      submit: "Log In"
       title: "Log in with your details"
 
   users:
     new:
+      sign_in_message_html: "Already have an account? Log in %{href}."
       submit: "Sign Up"
       title: "Enter Your Details"
     show:

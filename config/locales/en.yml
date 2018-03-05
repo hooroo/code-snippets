@@ -15,12 +15,20 @@ en:
         alert: "Invalid email/password combination"
         notice: "Log in successful"
 
+    destroy:
+      flash:
+        notice: "Log out successful"
+
     new:
       flash:
         alert: "Already logged in"
       sign_up_message_html: "Haven't got an account? Click %{href} to sign up."
       submit: "Log In"
       title: "Log in with your details"
+
+    links:
+      sign_in: "Sign In"
+      sign_out: "Sign Out"
 
   users:
     new:

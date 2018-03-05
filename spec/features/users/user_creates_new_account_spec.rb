@@ -1,6 +1,6 @@
 require "rails_helper"
 
-feature "user creates new account" do
+feature "User creates new account" do
   scenario "successfully" do
     visit(new_user_path)
 

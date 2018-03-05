@@ -1,6 +1,6 @@
 require "rails_helper"
 
-feature "user authentication" do
+feature "User authentication" do
   scenario "successfully log in" do
     user = create(:user)
 

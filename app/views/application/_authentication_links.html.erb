@@ -1,0 +1,5 @@
+<% if current_user %>
+  <%= link_to(t("sessions.links.sign_out"), logout_path) %>
+<% else %>
+  <%= link_to(t("sessions.links.sign_in"), login_path) %>
+<% end %>

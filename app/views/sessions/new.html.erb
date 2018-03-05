@@ -5,5 +5,5 @@
   <%= f.button :submit, t(".submit") %>
 <% end %>
 <p>
-  Haven't got an account? Click <%= link_to "here", new_user_path %> to sign up
+  <%= t(".sign_up_message_html", href: link_to("here", new_user_path)) %>
 </p>

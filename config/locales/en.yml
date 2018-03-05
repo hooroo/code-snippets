@@ -19,6 +19,7 @@ en:
       flash:
         alert: "Already logged in"
       submit: "Log In"
+      sign_up_message_html: "Haven't got an account? Click %{href} to sign up."
       title: "Log in with your details"
 
   users:

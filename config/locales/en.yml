@@ -29,7 +29,7 @@ en:
   users:
     new:
       sign_in_message_html: "Already have an account? Log in %{href}."
-      submit: "Sign Up"
+      submit: "Create account"
       title: "Enter Your Details"
     links:
       sign_up: "Sign Up"

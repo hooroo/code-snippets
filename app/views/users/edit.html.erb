@@ -1,0 +1,9 @@
+<h1><%= t(".title") %></h1>
+<%= simple_form_for current_user do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :username %>
+  <%= f.input :email, disabled: true %>
+  <%= f.input :password %>
+  <%= f.button :submit, t(".submit") %>
+<% end %>

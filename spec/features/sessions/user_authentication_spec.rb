@@ -10,7 +10,7 @@ feature "User authentication" do
     click_on(I18n.t("sessions.new.submit"))
 
     expect(page).to have_text(
-      "#{I18n.t('users.show.welcome')}, #{user.first_name}",
+      I18n.t("users.show.welcome", user: user),
     )
     expect(page).to have_text(I18n.t("sessions.create.flash.notice"))
   end

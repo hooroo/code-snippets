@@ -35,7 +35,7 @@ describe UsersController do
         user = create(:user, first_name: "original")
         allow(controller).to receive(:current_user).and_return(user)
 
-        put :update, params: { id: user.id, user: { first_name: "" } }
+        put :update, params: { user: { first_name: "" } }
 
         expect(user.reload.first_name).to eq("original")
       end
@@ -44,7 +44,7 @@ describe UsersController do
         user = create(:user, first_name: "original")
         allow(controller).to receive(:current_user).and_return(user)
 
-        put :update, params: { id: user.id, user: { first_name: "" } }
+        put :update, params: { user: { first_name: "" } }
 
         expect(response).to render_template(:edit)
       end
@@ -53,7 +53,7 @@ describe UsersController do
         user = create(:user, first_name: "original")
         allow(controller).to receive(:current_user).and_return(user)
 
-        put :update, params: { id: user.id, user: { first_name: "" } }
+        put :update, params: { user: { first_name: "" } }
 
         expect(flash[:alert]).to match I18n.t("flash.users.update.alert")
       end

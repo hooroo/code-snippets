@@ -20,6 +20,8 @@ Layout/IndentationConsistency:
 Layout/MultilineBlockLayout:
   Exclude:
     - "spec/**/*"
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
 Metrics/AbcSize:
   Exclude:
     - "app/controllers/sessions_controller.rb"
@@ -75,9 +77,9 @@ Style/StringLiterals:
 Style/SymbolArray:
   Enabled: false
 Style/TrailingCommaInArguments:
-  EnforcedStyleForMultiline: consistent_comma
+  EnforcedStyleForMultiline: comma
 Style/TrailingCommaInLiteral:
-  EnforcedStyleForMultiline: consistent_comma
+  EnforcedStyleForMultiline: comma
 Style/UnneededInterpolation:
   Enabled: false
 Style/WordArray:

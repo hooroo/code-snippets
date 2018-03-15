@@ -14,4 +14,9 @@ class ApplicationController < ActionController::Base
     end
   end
   helper_method :current_user
+
+  def log_in(user, msg=t("sessions.create.flash.notice"))
+    session[:user_id] = user.id
+    redirect_to user_path, notice: msg
+  end
 end

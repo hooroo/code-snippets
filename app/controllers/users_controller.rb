@@ -7,18 +7,17 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      log_in(@user)
-      flash[:notice] = t("flash.users.create.notice")
+      log_in(@user, t("flash.users.create.notice"))
     else
       flash[:alert] = t("flash.users.create.alert")
       render :new
     end
   end
 
-  def edit
+  def show
   end
 
-  def show
+  def edit
   end
 
   def update

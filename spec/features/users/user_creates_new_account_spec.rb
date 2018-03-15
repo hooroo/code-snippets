@@ -11,6 +11,7 @@ feature "User creates new account" do
     fill_in("user_last_name", with: "Bar")
     click_on(I18n.t("users.new.submit"))
 
+    expect(page).to have_text(I18n.t("flash.users.create.notice"))
     expect(page).to have_text(I18n.t("users.show.welcome", user: "Foo Bar"))
   end
 end

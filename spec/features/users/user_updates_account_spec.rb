@@ -3,11 +3,7 @@ require "rails_helper"
 feature "User updates account" do
   scenario "successfully" do
     user = create(:user)
-
-    visit(login_path)
-    fill_in("session_email", with: user.email)
-    fill_in("session_password", with: user.password)
-    click_on(I18n.t("sessions.new.submit"))
+    login_as(user)
 
     visit(edit_user_path)
     fill_in("user_first_name", with: "john")

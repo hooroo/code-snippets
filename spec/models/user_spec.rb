@@ -18,4 +18,20 @@ RSpec.describe User, type: :model do
     it { is_expected.to validate_presence_of(:first_name) }
     it { is_expected.to validate_presence_of(:last_name) }
   end
+
+  describe "#full_name" do
+    it "returns the user's titleized full name" do
+      user = build(:user, first_name: "foo", last_name: "bar")
+
+      expect(user.full_name).to eq("Foo Bar")
+    end
+  end
+
+  describe "#to_s" do
+    it "calls #full_name returns the user's titleized full name" do
+      user = build(:user, first_name: "foo", last_name: "bar")
+
+      expect(user.to_s).to eq("Foo Bar")
+    end
+  end
 end

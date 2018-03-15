@@ -6,11 +6,15 @@ class User < ApplicationRecord
 
   validates :username, presence: true, uniqueness: true, length: { minimum: 4 }
   validates :email, presence: true, uniqueness: true
-  validates :password, length: { minimum: 8 }
+  validates :password, length: { minimum: 8 }, allow_blank: true
   validates :first_name, presence: true
   validates :last_name, presence: true
 
-  def to_s
+  def full_name
     [first_name, last_name].join(" ").titleize
+  end
+
+  def to_s
+    full_name
   end
 end

@@ -1,1 +1,10 @@
-<h1><%= "#{t(".welcome")}, #{@user.first_name.capitalize}" %></h1>
+<h1><%= t(".welcome", user: current_user.full_name) %></h1>
+
+<h3><%= t(".account_details") %></h3>
+<p><%= t(".account_name") %>: <%= current_user %></p>
+<p><%= t(".account_username") %>: <%= current_user.username %></p>
+<p><%= t(".account_email") %>: <%= current_user.email %></p>
+
+<button>
+  <%= link_to(t("users.links.update"), edit_user_path) %>
+</button>

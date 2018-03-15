@@ -7,8 +7,7 @@ class SessionsController < ApplicationController
 
   def create
     if user&.authenticate(params[:session][:password])
-      session[:user_id] = user.id
-      redirect_to user_path(user), notice: t(".flash.notice")
+      log_in(user)
     else
       flash[:alert] = t(".flash.alert")
       render :new

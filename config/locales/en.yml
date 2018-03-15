@@ -27,11 +27,19 @@ en:
       sign_out: "Sign Out"
 
   users:
+    edit:
+      title: "Edit your account"
+      submit: "Update Account"
     new:
       sign_in_message_html: "Already have an account? Log in %{href}."
-      submit: "Sign Up"
+      submit: "Create account"
       title: "Enter Your Details"
     links:
+      update: "Update Account"
       sign_up: "Sign Up"
     show:
-      welcome: "Welcome"
+      account_details: "Account Details"
+      account_email: "Email"
+      account_name: "Name"
+      account_username: "Username"
+      welcome: "Welcome, %{user}"

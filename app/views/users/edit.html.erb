@@ -1,0 +1,7 @@
+<h1><%= t(".title") %></h1>
+<%= simple_form_for current_user, url: user_path do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :username %>
+  <%= f.button :submit, t(".submit") %>
+<% end %>

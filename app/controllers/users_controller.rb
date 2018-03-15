@@ -9,8 +9,17 @@ class UsersController < ApplicationController
     respond_with @user
   end
 
+  def edit
+  end
+
   def show
     @user = User.find(params[:id])
+  end
+
+  def update
+    current_user.update_attributes(user_params)
+
+    respond_with current_user, location: -> { user_path }
   end
 
   private

@@ -38,4 +38,8 @@ en:
       update: "Update Account"
       sign_up: "Sign Up"
     show:
-      welcome: "Welcome"
+      account_details: "Account Details"
+      account_email: "Email"
+      account_name: "Name"
+      account_username: "Username"
+      welcome: "Welcome, %{user}"
